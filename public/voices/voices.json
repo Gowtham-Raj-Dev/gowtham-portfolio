@@ -1,0 +1,51 @@
+{
+  "lobby": {
+    "hash": "263339186552",
+    "voice": "Charon",
+    "checked": true
+  },
+  "codelove": {
+    "hash": "6a2869b1391f",
+    "voice": "Achernar"
+  },
+  "models": {
+    "hash": "133d9ae6e0d8",
+    "voice": "Puck"
+  },
+  "games": {
+    "hash": "4311f4d7dbca",
+    "voice": "Orus"
+  },
+  "downloader": {
+    "hash": "598399d3b578",
+    "voice": "Kore"
+  },
+  "linkinbio": {
+    "hash": "fe23f4f7c6b7",
+    "voice": "Iapetus"
+  },
+  "videotogif": {
+    "hash": "e42b93ab7173",
+    "voice": "Leda"
+  },
+  "videotoimages": {
+    "hash": "01c2f167187a",
+    "voice": "Algieba"
+  },
+  "utubeflow": {
+    "hash": "7ed891d737fd",
+    "voice": "Aoede"
+  },
+  "javaplay": {
+    "hash": "6e910f704f89",
+    "voice": "Fenrir"
+  },
+  "workshop": {
+    "hash": "69823a7a6a63",
+    "voice": "Umbriel"
+  },
+  "exit": {
+    "hash": "bee9ee74d55d",
+    "voice": "Despina"
+  }
+}

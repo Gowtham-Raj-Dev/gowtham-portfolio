@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <style>
+    .bg { fill: #000000; }
+    .fg { stroke: #ffffff; }
+    .fill { fill: #ffffff; }
+  </style>
+  <rect class="bg" width="64" height="64" rx="16"/>
+  <g class="fg" fill="none" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="12" y="15" width="40" height="34" rx="6"/>
+    <path d="M12 27h40M24 15v12M40 15v12"/>
+  </g>
+  <rect class="fill" x="26" y="33" width="12" height="10" rx="2.5"/>
+</svg>
