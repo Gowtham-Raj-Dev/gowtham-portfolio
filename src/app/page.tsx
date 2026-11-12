@@ -124,18 +124,20 @@ export default function Home() {
                     </li>
                   ))}
                 </ul>
-                <p className="network">
-                  CodeLove network:{" "}
-                  {sites.map((s, k) => (
-                    <span key={s.domain}>
-                      <a href={s.url} target="_blank" rel="noopener">
-                        {s.name}
-                      </a>
-                      {k < sites.length - 1 ? " · " : ""}
-                    </span>
-                  ))}
-                </p>
-                <p className="credits">Guides and first-person arms: Microsoft Rocketbox avatars (MIT). Furniture, plants, characters and arcade machines from the Free 3D Models library (CC0).</p>
+                <footer className="site-footer" aria-label="CodeLove network and credits">
+                  <p className="network">
+                    CodeLove network:{" "}
+                    {sites.map((s, k) => (
+                      <span key={s.domain}>
+                        <a href={s.url} target="_blank" rel="noopener">
+                          {s.name}
+                        </a>
+                        {k < sites.length - 1 ? " · " : ""}
+                      </span>
+                    ))}
+                  </p>
+                  <p className="credits">Guides and first-person arms: Microsoft Rocketbox avatars (MIT). Furniture, plants, characters and arcade machines from the Free 3D Models library (CC0).</p>
+                </footer>
               </>
             )}
           </section>

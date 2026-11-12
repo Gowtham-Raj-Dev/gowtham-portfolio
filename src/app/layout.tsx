@@ -4,9 +4,9 @@ import { skills } from "@/lib/content";
 import "./globals.css";
 
 const SITE = "https://gowtham.codelove.in";
-const TITLE = "Gowtham — Creative Web Developer & Founder of CodeLove | 3D Portfolio";
+const TITLE = "Gowtham — Creative Web Developer & CodeLove Founder";
 const DESCRIPTION =
-  "Gowtham (Gowthamraj), creative web developer and founder of CodeLove. Walk through a 3D museum of his ten live websites — including Video Cut, Free 3D Models, Link in Bio, and 14+ free 3D browser games.";
+  "Gowtham (Gowthamraj), creative web developer & founder of CodeLove. Explore his 3D portfolio featuring Video Cut, Free 3D Models, and 14+ 3D games.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
@@ -104,7 +104,7 @@ const jsonLd = {
       alternateName: ["Code Love", "Code With Love"],
       url: "https://codelove.in",
       sameAs: sites.map((s) => s.url),
-      logo: "https://gowtham.codelove.in/logos/codelove.png",
+      logo: "https://codelove.in/new-logo/android-chrome-512x512.png",
       founder: { "@id": `${SITE}/#person` },
     },
     {
@@ -127,6 +127,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="sitemap" type="application/xml" href="https://gowtham.codelove.in/sitemap.xml" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}
