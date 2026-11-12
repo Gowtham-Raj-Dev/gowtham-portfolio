@@ -1,6 +1,11 @@
+import type { Metadata } from "next";
 import Experience from "@/components/Experience";
 import { sites } from "@/lib/sites";
 import { rooms, games, skills, steps, stats, gameUrl, contact } from "@/lib/content";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 const num = (i: number) => String(i).padStart(2, "0");
 

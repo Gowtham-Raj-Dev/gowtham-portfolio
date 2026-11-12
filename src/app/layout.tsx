@@ -35,8 +35,7 @@ export const metadata: Metadata = {
     ...sites.map((s) => s.name),
   ],
   category: "technology",
-  alternates: { canonical: "/" },
-  robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 } },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 } },
   // the link preview on WhatsApp, LinkedIn, X and the rest
   openGraph: {
     type: "profile",
