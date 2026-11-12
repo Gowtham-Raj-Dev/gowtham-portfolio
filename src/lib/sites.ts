@@ -26,7 +26,7 @@ export const sites: Site[] = [
     blurb: "The home of the network: free tools, a learning center, guides and a blog in one place.",
     features: ["Free online tools", "Learning center", "Step-by-step guides", "Blog", "Links every CodeLove site"],
     numbers: [
-      { big: "9", small: "sites linked" },
+      { big: "10", small: "sites linked" },
       { big: "0", small: "sign-ups needed" },
     ],
     tags: ["Next.js", "SEO", "Hub"],
@@ -135,6 +135,23 @@ export const sites: Site[] = [
     logo: "/logos/videotoimages.svg",
     shot: "/shots/videotoimages.png",
     accent: "#e8edf5",
+  },
+  {
+    key: "videocut",
+    name: "Video Cut",
+    url: "https://videocut.codelove.in",
+    domain: "videocut.codelove.in",
+    tagline: "Free video shorts cutter & clip splitter.",
+    blurb: "Cut, trim and split long videos into vertical 9:16 Shorts, Reels and clean clips right in your browser with zero uploads.",
+    features: ["Video shorts cutter", "Frame-accurate trimming", "9:16 Reels & Shorts crop", "Runs privately in-browser", "Zero watermarks"],
+    numbers: [
+      { big: "100%", small: "in-browser" },
+      { big: "0", small: "watermarks" },
+    ],
+    tags: ["Next.js", "FFmpeg", "Video"],
+    logo: "/logos/videocut.svg",
+    shot: "/shots/videocut.png",
+    accent: "#f97316",
   },
   {
     key: "utubeflow",

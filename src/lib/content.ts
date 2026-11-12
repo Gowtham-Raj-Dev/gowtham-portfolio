@@ -15,9 +15,9 @@ export const steps = [
 ];
 
 export const stats = [
-  { big: "9", small: "live websites" },
+  { big: "10", small: "live websites" },
   { big: "6.9k", small: "3D model pages" },
-  { big: "14", small: "browser games" },
+  { big: "14+", small: "browser games" },
   { big: "1", small: "developer" },
 ];
 
@@ -87,7 +87,7 @@ export const rooms: Room[] = [
 ];
 
 /** Rooms whose guide is a woman (picks the narration voice). */
-export const femaleGuides = new Set(["codelove", "downloader", "videotogif", "utubeflow", "exit"]);
+export const femaleGuides = new Set(["codelove", "downloader", "videotogif", "videocut", "utubeflow", "exit"]);
 
 /** What the guide standing in each room says (model in /public/models/guides/<room id>.glb). */
 export const guides: Record<string, { name: string; line: string }> = {
@@ -122,6 +122,10 @@ export const guides: Record<string, { name: string; line: string }> = {
   videotoimages: {
     name: "Sanjay",
     line: "Video to Images pulls frames out of a video, saves the audio as an MP3, or resizes the video to 1080p, 720p or 480p. Everything stays private on your device.",
+  },
+  videocut: {
+    name: "Nithya",
+    line: "Video Cut is a free video shorts cutter right inside your browser. Trim exact timestamps and export vertical 9:16 Shorts and Reels with no uploads and no watermark.",
   },
   utubeflow: {
     name: "Kavya",

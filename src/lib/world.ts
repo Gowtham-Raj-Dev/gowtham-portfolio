@@ -20,7 +20,7 @@ const DIRS = [
   [-1, 0],
 ] as const; // N E S W
 // Exit wall of each room. Alternating E/W with N in between makes a snake that never overlaps.
-const EXITS = [1, 0, 3, 0, 1, 0, 3, 0, 1, 0, 3, 0];
+const EXITS = [1, 0, 3, 0, 1, 0, 3, 0, 1, 0, 3, 0, 1];
 const CL = 7; // corridor length
 const DW = 4; // door width
 const DH = 4.6; // door height
@@ -47,6 +47,7 @@ const THEMES: Record<string, Theme> = {
   linkinbio: { wall: "#d9cfee", floor: "wood", f1: "#c9a77f", f2: "#a8835a", ceil: "#f1ecf8", trim: "#9b5cf0" },
   videotogif: { wall: "#0f2a30", floor: "checker", f1: "#0a1619", f2: "#17444d", ceil: "#081417", trim: "#00b8cc" },
   videotoimages: { wall: "#ece9e3", floor: "concrete", f1: "#d3cec5", f2: "#bab4a9", ceil: "#f7f5f1", trim: "#8a8f99" },
+  videocut: { wall: "#29140d", floor: "grid", f1: "#170b06", f2: "#6b2b12", ceil: "#170a05", trim: "#f97316" },
   utubeflow: { wall: "#16301f", floor: "wood", f1: "#6a4a2c", f2: "#46301b", ceil: "#0f2018", trim: "#34d399" },
   javaplay: { wall: "#33200e", floor: "checker", f1: "#1c130a", f2: "#6a3c12", ceil: "#1a1008", trim: "#ff8a1f" },
   workshop: { wall: "#45464a", floor: "concrete", f1: "#6a6b6e", f2: "#58595c", ceil: "#2a2b2e", trim: "#22d3ee" },
@@ -82,6 +83,7 @@ const DECOR: Record<string, Decor[]> = {
   linkinbio: [...desk(4), sofa(0), sofa(3), { m: "avatar-show__arm-chair", h: 0.95, slot: 8 }, plant(9), plant(7)],
   videotogif: [{ m: "avatar-show__table", h: 0.76, slot: 0 }, { m: "monitor", h: 1.7, slot: 0, y: 0.76 }, sofa(9), { m: "avatar-show__arm-chair", h: 0.95, slot: 8 }, plant(4), plant(7), plant(3)],
   videotoimages: [0, 1, 2, 3, 4, 7].map((slot): Decor => ({ m: "frame", h: 1, slot })).concat([plant(8), plant(9)]),
+  videocut: [...desk(0), ...desk(4), sofa(7), plant(8), plant(9), plant(3)],
   utubeflow: [plant(0, 2), plant(3, 2), plant(4, 2), plant(7, 2), plant(8, 2.2), plant(9, 2.2), plant(11, 2.2), sofa(1)],
   javaplay: [...desk(0), ...desk(3), plant(8), plant(9), sofa(5)],
   workshop: [...desk(0), ...desk(3), sofa(4), plant(7), plant(9), { m: "avatar-show__arm-chair", h: 0.95, slot: 8 }],

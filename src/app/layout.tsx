@@ -6,7 +6,7 @@ import "./globals.css";
 const SITE = "https://gowtham.codelove.in";
 const TITLE = "Gowtham — Creative Web Developer & Founder of CodeLove | 3D Portfolio";
 const DESCRIPTION =
-  "Gowtham, creative web developer and founder of CodeLove. Walk through a 3D museum of his nine free websites and play 14 browser games.";
+  "Gowtham (Gowthamraj), creative web developer and founder of CodeLove. Walk through a 3D museum of his ten live websites — including Video Cut, Free 3D Models, Link in Bio, and 14+ free 3D browser games.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
@@ -16,7 +16,24 @@ export const metadata: Metadata = {
   authors: [{ name: "Gowtham", url: SITE }],
   creator: "Gowtham",
   publisher: "CodeLove",
-  keywords: ["Gowtham", "Gowtham CodeLove", "creative web developer", "web developer portfolio", "3D portfolio", "Three.js portfolio", "CodeLove", "founder of CodeLove", ...sites.map((s) => s.name)],
+  keywords: [
+    "Gowtham",
+    "Gowthamraj",
+    "Gowtham CodeLove",
+    "creative web developer",
+    "web developer portfolio",
+    "3D portfolio",
+    "Three.js portfolio",
+    "CodeLove",
+    "code love",
+    "founder of CodeLove",
+    "Video Cut",
+    "video shorts cutter",
+    "free 3D games",
+    "free GLB models",
+    "link in bio",
+    ...sites.map((s) => s.name),
+  ],
   category: "technology",
   alternates: { canonical: "/" },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 } },
@@ -29,7 +46,7 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     locale: "en_IN",
     firstName: "Gowtham",
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: "GOWTHAM · Creative web developer · Founder of CodeLove, with the logos of his nine websites" }],
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "GOWTHAM · Creative web developer · Founder of CodeLove, with his ten live websites" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -69,13 +86,15 @@ const jsonLd = {
       "@type": "Person",
       "@id": `${SITE}/#person`,
       name: "Gowtham",
+      alternateName: "Gowthamraj",
       url: SITE,
       image: `${SITE}/og.png`,
       jobTitle: "Creative Web Developer",
-      description: "Creative web developer and founder of CodeLove, who builds free web tools, a 3D model library and browser games.",
+      description: "Creative web developer and founder of CodeLove, who builds free web tools, Video Cut, a 3D model library and browser games.",
       email: "mailto:gowtham@codelove.in",
       worksFor: { "@id": "https://codelove.in/#organization" },
       founder: { "@id": "https://codelove.in/#organization" },
+      sameAs: ["https://codelove.in/about", ...sites.map((s) => s.url)],
       knowsAbout: skills.flatMap((g) => g.items),
       nationality: { "@type": "Country", name: "India" },
     },
@@ -83,7 +102,9 @@ const jsonLd = {
       "@type": "Organization",
       "@id": "https://codelove.in/#organization",
       name: "CodeLove",
+      alternateName: ["Code Love", "Code With Love"],
       url: "https://codelove.in",
+      sameAs: sites.map((s) => s.url),
       logo: "https://gowtham.codelove.in/logos/codelove.png",
       founder: { "@id": `${SITE}/#person` },
     },
