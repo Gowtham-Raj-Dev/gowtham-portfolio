@@ -133,6 +133,8 @@ export default function RootLayout({
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&family=Unbounded:wght@700;800;900&display=swap" rel="stylesheet" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+        {/* CodeLove Analytics (admin.codelove.in) */}
+        <script defer src="https://admin.codelove.in/t.js" />
       </head>
       <body>{children}</body>
     </html>
