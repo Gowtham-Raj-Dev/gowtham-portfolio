@@ -188,3 +188,19 @@ export const sites: Site[] = [
     accent: "#ff8a1f",
   },
 ];
+
+/** Every site of the CodeLove network with descriptive anchor text, for the crawlable footers (the museum rooms use `sites`). */
+export const networkLinks: { label: string; url: string }[] = [
+  { label: "CodeLove: free online tools and guides", url: "https://codelove.in" },
+  { label: "Free 3D models (GLB) library", url: "https://models.codelove.in" },
+  { label: "Free 3D browser games", url: "https://games.codelove.in" },
+  { label: "Instagram and Pinterest downloader", url: "https://downloader.codelove.in" },
+  { label: "Link in bio page builder", url: "https://linkinbio.codelove.in" },
+  { label: "Video to GIF converter", url: "https://videotogif.codelove.in" },
+  { label: "Video to images frame extractor", url: "https://videotoimages.codelove.in" },
+  { label: "Video Cut: video to YouTube Shorts cutter", url: "https://videocut.codelove.in" },
+  { label: "Video Maker: AI cartoon videos from a script", url: "https://videomaker.codelove.in" },
+  { label: "UTubeFlow: free YouTube automation", url: "https://utubeflow.codelove.in" },
+  { label: "JavaPlay: old Java phone games emulator", url: "https://javaplay.codelove.in" },
+  { label: "CodeLove Apps for Android", url: "https://apps.codelove.in" },
+];

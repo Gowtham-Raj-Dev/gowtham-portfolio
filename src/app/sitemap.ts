@@ -7,7 +7,7 @@ export const dynamic = "force-static";
 const SITE = "https://gowtham.codelove.in";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return ["", "/about", "/contact", "/privacy"].map((path) => ({
+  return ["/", "/about", "/contact", "/privacy"].map((path) => ({
     url: `${SITE}${path}`,
     lastModified: new Date(),
     changeFrequency: "daily",

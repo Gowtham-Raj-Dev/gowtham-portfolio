@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { networkLinks } from "@/lib/sites";
 
 /** Plain text page (About, Contact, Privacy): brand link back to the museum, the content, and the page links. */
 export const INFO_LINKS = [
@@ -33,7 +34,15 @@ export default function InfoPage({ title, updated, children }: { title: string; 
         <p>
           © {new Date().getFullYear()} Gowtham · <a href="https://codelove.in">CodeLove</a>
         </p>
-      </footer>
+        <p className="network">
+          CodeLove network:{" "}
+          {networkLinks.map((s, k) => (
+            <span key={s.url}>
+              <a href={s.url}>{s.label}</a>
+              {k < networkLinks.length - 1 ? " · " : ""}
+            </span>
+          ))}
+        </p>      </footer>
     </div>
   );
 }

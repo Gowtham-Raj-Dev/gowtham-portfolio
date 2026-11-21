@@ -1118,3 +1118,28 @@ html.manual .caption {
     display: none;
   }
 }
+
+.faq {
+  margin: 14px 0;
+}
+.faq h2 {
+  font-size: 15px !important;
+  margin-bottom: 6px !important;
+}
+.faq details {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 6px 0;
+  font-size: 13px;
+}
+.faq summary {
+  cursor: pointer;
+  color: var(--text);
+}
+.faq details p {
+  margin: 6px 0 2px;
+  font-size: 13px !important;
+}
+.info-foot .network {
+  margin-top: 8px;
+  line-height: 1.8;
+}
