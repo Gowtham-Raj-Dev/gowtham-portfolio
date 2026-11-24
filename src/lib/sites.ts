@@ -187,6 +187,23 @@ export const sites: Site[] = [
     shot: "/shots/javaplay.png",
     accent: "#ff8a1f",
   },
+  {
+    key: "webly",
+    name: "Webly",
+    url: "https://webly.codelove.in",
+    domain: "webly.codelove.in",
+    tagline: "Website analytics, deep SEO audit & automated problem fixes.",
+    blurb: "Webly brings Google Analytics, Search Console and AdSense together in one dashboard, audits 30+ SEO and speed points, and generates copy-paste code fixes.",
+    features: ["GA4, GSC & AdSense in one dashboard", "30+ point technical SEO audit", "Instant copy-paste code fixes", "PageSpeed & broken link tools"],
+    numbers: [
+      { big: "30+", small: "SEO checks" },
+      { big: "3-in-1", small: "Google APIs" },
+    ],
+    tags: ["Analytics", "SEO", "Developer tools"],
+    logo: "/logos/webly.svg",
+    shot: "/shots/webly.png",
+    accent: "#4f46e5",
+  },
 ];
 
 /** Every site of the CodeLove network with descriptive anchor text, for the crawlable footers (the museum rooms use `sites`). */
@@ -202,5 +219,6 @@ export const networkLinks: { label: string; url: string }[] = [
   { label: "Video Maker: AI cartoon videos from a script", url: "https://videomaker.codelove.in" },
   { label: "UTubeFlow: free YouTube automation", url: "https://utubeflow.codelove.in" },
   { label: "JavaPlay: old Java phone games emulator", url: "https://javaplay.codelove.in" },
+  { label: "Webly: website analytics & SEO problem fixer", url: "https://webly.codelove.in" },
   { label: "CodeLove Apps for Android", url: "https://apps.codelove.in" },
 ];
