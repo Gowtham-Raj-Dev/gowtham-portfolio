@@ -219,6 +219,9 @@ export const networkLinks: { label: string; url: string }[] = [
   { label: "Video Maker: AI cartoon videos from a script", url: "https://videomaker.codelove.in" },
   { label: "UTubeFlow: free YouTube automation", url: "https://utubeflow.codelove.in" },
   { label: "JavaPlay: old Java phone games emulator", url: "https://javaplay.codelove.in" },
+  { label: "VOLTARC: instant HTML5 & 3D cloud arcade", url: "https://voltarc.codelove.in" },
+  { label: "Satisfying Video Maker: physics & ASMR studio", url: "https://satisfying-video-maker.codelove.in" },
+  { label: "ILoveConvert: free online file & image converters", url: "https://iloveconvert.codelove.in" },
   { label: "Webly: website analytics & SEO problem fixer", url: "https://webly.codelove.in" },
   { label: "CodeLove Apps for Android", url: "https://apps.codelove.in" },
 ];
